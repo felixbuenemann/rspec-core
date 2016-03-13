@@ -12,6 +12,10 @@ Enhancements:
 * Add new `config.when_first_matching_example_defined` hook. (Myron
   Marston, #2175)
 
+Bug Fixes:
+
+* Fix rounding issue in duration formatting helper. (Fabersky, Jon Rowe, #2208)
+
 ### 3.5.0.beta1 / 2016-02-06
 [Full Changelog](http://github.com/rspec/rspec-core/compare/v3.4.3...v3.5.0.beta1)
 
