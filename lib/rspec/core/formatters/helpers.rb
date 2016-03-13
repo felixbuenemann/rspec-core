@@ -30,8 +30,8 @@ module RSpec
                       end
 
           if duration > 60
-            minutes = (duration.to_i / 60).to_i
-            seconds = duration - minutes * 60
+            minutes = (duration.round / 60).to_i
+            seconds = (duration - minutes * 60).abs
 
             "#{pluralize(minutes, 'minute')} #{pluralize(format_seconds(seconds, precision), 'second')}"
           else
